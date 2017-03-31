@@ -210,4 +210,20 @@
         <DASUrl>tcp://localhost:7612</DASUrl>
         <DASSecureUrl>ssl://localhost:7712</DASSecureUrl>
     </DataPublisher>
+
+    <Discovery>
+        <AuthorizationHeader>Authorization</AuthorizationHeader>
+        <AccptHeader>Accept</AccptHeader>
+    </Discovery>
+
+    <OpenIDAdminServices>
+        <UserName>admin</UserName>
+        <Password>admin</Password>
+    </OpenIDAdminServices>
+
+    <ServiceProviderHeaders>
+        <UserName>admin</UserName>
+        <Password>admin</Password>
+    </ServiceProviderHeaders>
+
 </MobileConnectConfig>
