@@ -211,10 +211,18 @@
         <DASSecureUrl>ssl://localhost:7712</DASSecureUrl>
     </DataPublisher>
 
-    <Discovery>
-        <AuthorizationHeader>Authorization</AuthorizationHeader>
-        <AccptHeader>Accept</AccptHeader>
-    </Discovery>
+    
+	<DiscoveryConfigs>
+		<DiscoveryCrConfig>
+			<CrdServiceUrl>https://india.discover.mobileconnect.io/rv/v1/exchange/organizations/gsma/validate</CrdServiceUrl>
+		</DiscoveryCrConfig>
+		<DiscoveryEksConfig>
+			<EksServiceUrl>https://india.discover.mobileconnect.io/gsma/v2/discovery/</EksServiceUrl>
+			<EksRedirectUrl>http://jenkins.wso2telco.com:9763/playground2/oauth2.jsp</EksRedirectUrl>
+			<Msisdn>919958713388</Msisdn>
+		</DiscoveryEksConfig>
+	</DiscoveryConfigs>
+
 
     <OpenIDAdminServices>
         <UserName>admin</UserName>
