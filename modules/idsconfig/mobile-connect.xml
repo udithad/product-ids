@@ -211,7 +211,7 @@
         <DASSecureUrl>ssl://localhost:7712</DASSecureUrl>
     </DataPublisher>
 
-    
+    <SeamlessProvisioningEnabled>false</SeamlessProvisioningEnabled>
 	<DiscoveryConfigs>
 		<DiscoveryCrConfig>
 			<CrdServiceUrl>https://india.discover.mobileconnect.io/rv/v1/exchange/organizations/gsma/validate</CrdServiceUrl>
