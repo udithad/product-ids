@@ -211,7 +211,7 @@
         <DASSecureUrl>ssl://localhost:7712</DASSecureUrl>
     </DataPublisher>
 
-    <SeamlessProvisioningEnabled>false</SeamlessProvisioningEnabled>
+    <SeamlessProvisioningEnabled>true</SeamlessProvisioningEnabled>
 	<DiscoveryConfigs>
 		<DiscoveryCrConfig>
 			<CrdServiceUrl>https://india.discover.mobileconnect.io/rv/v1/exchange/organizations/gsma/validate</CrdServiceUrl>
@@ -223,6 +223,37 @@
 		</DiscoveryEksConfig>
 	</DiscoveryConfigs>
 
+    <SpProvisionConfig>
+        <AdminServiceHostUrl>https://localhost:9443/services/OAuthAdminService</AdminServiceHostUrl>
+        <ApplicationManagementHostUrl>https://localhost:9443/services/IdentityApplicationManagementService</ApplicationManagementHostUrl>
+        <UserName>admin</UserName>
+        <Password>admin</Password>
+        <MaximumTotalHttpConections>100</MaximumTotalHttpConections>
+        <MaximumHttpConnectionsPerHost>2</MaximumHttpConnectionsPerHost>
+        <config>
+            <AlwaysSendMappedLocalSubjectId>false</AlwaysSendMappedLocalSubjectId>
+            <LocalClaimDialect>true</LocalClaimDialect>
+            <InboundAuthType>oauth2</InboundAuthType>
+            <Confidential>false</Confidential>
+            <DefaultValue>null</DefaultValue>
+            <PropertyName>oauthConsumerSecret</PropertyName>
+            <PropertyRequired>false</PropertyRequired>
+            <ProvisioningEnabled>false</ProvisioningEnabled>
+            <ProvisioningUserStore>PRIMARY</ProvisioningUserStore>
+            <SaasApp>true</SaasApp>
+            <LocalAuthenticatorConfigsDisplayName>LOA</LocalAuthenticatorConfigsDisplayName>
+            <LocalAuthenticatorConfigsEnabled>false</LocalAuthenticatorConfigsEnabled>
+            <LocalAuthenticatorConfigsName>LOACompositeAuthenticator</LocalAuthenticatorConfigsName>
+            <LocalAuthenticatorConfigsValid>true</LocalAuthenticatorConfigsValid>
+            <LocalAuthenticatorConfigsAuthenticationType>local</LocalAuthenticatorConfigsAuthenticationType>
+            <UserName>admin</UserName>
+            <Password>admin</Password>
+            <OauthVersion>OAuth-2.0</OauthVersion>
+            <GrantTypes>authorization_code implicit password client_credentials refresh_token urn:ietf:params:oauth:grant-type:saml2-bearer iwa:ntlm</GrantTypes>
+            <PkceMandatory>true</PkceMandatory>
+            <PkceSupportPlain>false</PkceSupportPlain>
+        </config>
+    </SpProvisionConfig>
 
     <OpenIDAdminServices>
         <UserName>admin</UserName>
