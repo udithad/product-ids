@@ -250,7 +250,7 @@
             <Password>admin</Password>
             <OauthVersion>OAuth-2.0</OauthVersion>
             <GrantTypes>authorization_code implicit password client_credentials refresh_token urn:ietf:params:oauth:grant-type:saml2-bearer iwa:ntlm</GrantTypes>
-            <PkceMandatory>true</PkceMandatory>
+            <PkceMandatory>false</PkceMandatory>
             <PkceSupportPlain>false</PkceSupportPlain>
         </config>
     </SpProvisionConfig>
